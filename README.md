@@ -32,13 +32,13 @@
 
 ## Запуск
 
-Проект упакован в docker, следовательно достаточно запустить 2 команды:
+Сервер и БД упакованы в docker-compose, следовательно достаточно запустить 2 команды:
 ```
-   docker build . -t csv_server:latest
+   docker compose build
 ```
 
 ```
-   docker run -d -p 8000:8000 csv_server 
+   docker compose up 
 ```
 
 Сервер будет запущен на http://127.0.0.1:8000/docs
