@@ -10,4 +10,6 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
+RUN mkdir ./storage_csv
+
 RUN chmod a+x *.sh
